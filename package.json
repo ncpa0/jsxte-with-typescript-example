@@ -1,0 +1,42 @@
+{
+  "packageManager": "yarn@1.22.19",
+  "name": "jsxte-with-typescript-example",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "scripts": {
+    "fix:lint": "eslint --fix .",
+    "fix:prettier": "prettier -w ./src .",
+    "test:jest": "jest --coverage",
+    "test:lint": "eslint .",
+    "test:prettier": "prettier -c ./src && prettier -c ./__tests__",
+    "test:tsc": "tsc --noEmit",
+    "build": "tsc && cp ./src/public/styles.css ./dist/public/styles.css",
+    "start": "node ./dist/main.js"
+  },
+  "keywords": [],
+  "repository": {
+    "url": ""
+  },
+  "description": "",
+  "license": "MIT",
+  "author": {
+    "name": "Szymon Bretner",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsxte": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "prettier-plugin-jsdoc": "^0.4.2",
+    "typescript": "^4.9.5"
+  }
+}
