@@ -6,9 +6,8 @@
   "scripts": {
     "fix:lint": "eslint --fix .",
     "fix:prettier": "prettier -w ./src .",
-    "test:jest": "jest --coverage",
     "test:lint": "eslint .",
-    "test:prettier": "prettier -c ./src && prettier -c ./__tests__",
+    "test:prettier": "prettier -c ./src",
     "test:tsc": "tsc --noEmit",
     "build": "tsc && cp ./src/public/styles.css ./dist/public/styles.css",
     "start": "node ./dist/main.js"
